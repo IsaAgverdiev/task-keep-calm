@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Text from "@/components/Text.vue";
-import Carousel from "@/components/Carousel.vue";
+import Text from "@/pages/Text.vue";
+import Carousel from "@/pages/Carousel.vue";
 
 const routes = [
   { path: "/", component: Text },
