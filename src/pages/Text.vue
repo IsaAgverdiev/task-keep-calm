@@ -65,7 +65,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .page1 {
   margin-bottom: 222px;
 }
@@ -107,5 +107,45 @@ export default {
 .subtitle.page1__right-subtitle {
   margin-top: 125px;
   margin-bottom: 25px;
+}
+
+@media (max-width: 1399px) {
+  .container {
+    max-width: 335px;
+  }
+  .page1__text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .page1__left-text {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .page1__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .img2__wrap {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    order: 3;
+  }
+
+  .page1__right {
+    display: flex;
+    flex-direction: column;
+  }
+  .subtitle.page1__right-subtitle {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .page1 {
+    margin-bottom: 80px;
+  }
 }
 </style>

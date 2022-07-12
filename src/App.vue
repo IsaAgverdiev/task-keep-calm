@@ -79,10 +79,12 @@ h6 {
 .title {
   font-size: 64px;
   margin-top: 100px;
+  text-transform: uppercase;
   margin-bottom: 70px;
 }
 .subtitle {
   font-size: 48px;
+  text-transform: normal;
   margin: 0;
 }
 p {
