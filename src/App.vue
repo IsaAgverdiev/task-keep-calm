@@ -91,4 +91,16 @@ p {
 .bold {
   font-weight: bold;
 }
+
+@media (max-width: 1399px) {
+  .title {
+    font-size: 36px;
+    margin-top: 54px;
+    margin-bottom: 30px;
+  }
+  .subtitle {
+    margin: 0;
+    font-size: 24px;
+  }
+}
 </style>

@@ -69,4 +69,13 @@ export default {
   border-bottom: 3px solid #141414;
   transition: 0.3s;
 }
+
+@media (max-width: 1399px) {
+  .tabs__wrap {
+    margin-top: 30px;
+  }
+  .tab {
+    font-size: 18px;
+  }
+}
 </style>

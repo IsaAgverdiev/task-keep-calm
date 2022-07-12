@@ -2,7 +2,11 @@
   <main class="main">
     <div class="container">
       <h1 class="title carousel-title">Лучшие аниме тайтлы</h1>
-      <carousel :items-to-show="3.95" :wrapAround="true">
+      <carousel
+        :items-to-show="3.95"
+        :wrapAround="true"
+        :breakpoints="breakpoints"
+      >
         <slide v-for="slide in images" :key="slide">
           <img class="slide__img" :src="slide" alt="" />
         </slide>
@@ -37,6 +41,18 @@ export default {
   data() {
     return {
       images: [img1, img2, img3, img4, img5, img6, img7],
+      breakpoints: {
+        // 700px and up
+        320: {
+          itemsToShow: 1.5,
+          snapAlign: "center",
+        },
+        // 1024 and up
+        1399: {
+          itemsToShow: 3.95,
+          snapAlign: "start",
+        },
+      },
     };
   },
 };
@@ -63,7 +79,7 @@ export default {
 .slide__img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   background: #c3c3c3;
   border: 1px solid #141414;
   -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -93,5 +109,19 @@ export default {
 }
 .carousel__next {
   left: 50%;
+}
+
+@media (max-width: 1399px) {
+  .carousel {
+    margin-bottom: 80px;
+  }
+  .carousel__viewport {
+    overflow: unset;
+  }
+  .carousel__slide {
+    padding: 5px 10px;
+    width: auto;
+    height: auto;
+  }
 }
 </style>
