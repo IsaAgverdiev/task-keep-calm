@@ -95,6 +95,9 @@ p {
 }
 
 @media (max-width: 1399px) {
+  .container {
+    max-width: 335px;
+  }
   .title {
     font-size: 36px;
     margin-top: 54px;

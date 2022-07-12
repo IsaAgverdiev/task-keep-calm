@@ -47,6 +47,10 @@ export default {
           itemsToShow: 1.5,
           snapAlign: "center",
         },
+        800: {
+          itemsToShow: 2.5,
+          snapAlign: "center",
+        },
         // 1024 and up
         1399: {
           itemsToShow: 3.95,
@@ -110,18 +114,23 @@ export default {
 .carousel__next {
   left: 50%;
 }
-
 @media (max-width: 1399px) {
   .carousel {
     margin-bottom: 80px;
   }
   .carousel__viewport {
-    overflow: unset;
+    overflow: hidden;
   }
   .carousel__slide {
     padding: 5px 10px;
     width: auto;
     height: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel__viewport {
+    overflow: unset;
   }
 }
 </style>

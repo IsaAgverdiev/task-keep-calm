@@ -43,7 +43,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .tabs__wrap {
   display: flex;
   width: 100%;
@@ -71,6 +71,9 @@ export default {
 }
 
 @media (max-width: 1399px) {
+  .container {
+    max-width: 335px;
+  }
   .tabs__wrap {
     margin-top: 30px;
   }
