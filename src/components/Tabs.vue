@@ -7,7 +7,7 @@
           class="tab"
           @click="$router.push('/text')"
         >
-          Текст
+          Дискусия
         </button>
         <button
           :class="{ active: activeTabCarousel }"

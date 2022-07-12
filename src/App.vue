@@ -88,4 +88,7 @@ h6 {
 p {
   margin: 0;
 }
+.bold {
+  font-weight: bold;
+}
 </style>
